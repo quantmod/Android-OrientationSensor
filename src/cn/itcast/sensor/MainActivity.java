@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
 	private final class SensorListener implements SensorEventListener{
 		private float predegree = 0;
 		public void onSensorChanged(SensorEvent event) {
-			float degree = event.values[0];//´æ·ÅÁË·½ÏòÖµ 90
+			float degree = event.values[0];//å­˜æ”¾äº†æ–¹å‘å€¼ 90
 			RotateAnimation animation = new RotateAnimation(predegree, -degree, 
 					Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
 			animation.setDuration(200);
